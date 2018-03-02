@@ -117,15 +117,32 @@ function calculadora(numero1,numero2) {
 
 }
 calculadora();
-//Ex 7 End
-*/
-//Ex 8 Start
+//Ex 7 End */
+
+/*Ex 8 Start
 
 function main() {
-    
+    for ( index = 1; index*5 < 20; index++) {
+        console.log(index*5);
+    }
 }
 
-//Ex 9 End
+Ex 8 End */
+
+/*Ex 9 Start
+
+function main() {
+    var soma = 0;
+    var decremento = 100;
+    for (incremento = 0; incremento <= 100; incremento++) {
+        soma = soma+(decremento+incremento);
+        console.log(soma);
+        decremento--;
+    }
+}
+
+Ex 9 End */
+
 //Inline Geral
 
 main();
