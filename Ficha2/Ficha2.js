@@ -66,7 +66,14 @@ function main() {
 
 //Ex 4 Begin /*
 
-
+function main(){
+    var letra = 'h';
+    var frase = 'Hoi';
+    frase = frase.toLowerCase(frase);
+    for (posicaoFrase = frase.length; posicaoFrase != 0; posicaoFrase--){
+        if (letra == frase[posicaoFrase]) { console.log(letra); }
+    }
+}
 
 //Ex 4 End */
 /*//Ex 5 Begin 
@@ -79,16 +86,15 @@ function main() {
 }
 
 //Ex 5 End */
-//Ex 6 Begin /*
+ /*//Ex 6 Begin
 
 function main() {
     console.log('Desenha rectangulos');
-    altura = 10;
     largura = 20;
     x = largura;
-    for(altura != 0; altura--){
+    for(altura = 10; altura != 0; altura--){
 
-        for(x != 0; x--) {
+        for(x = largura; x != 0; x--) {
             console.log('*'*largura)
         }
     }
