@@ -143,6 +143,41 @@ function main() {
 
 Ex 9 End */
 
+/* //Ex 10 Begin
+
+function main() {
+    var somaFactor = 0;
+    for (factorial = 1; factorial < 100; factorial++) {
+        somaFactor += factorial+somaFactor;
+        console.log(somaFactor);
+    }
+}
+
+//Ex 10 End */
+
+/*Ex 11 Begin
+
+function main() {
+    var media = 0;
+    var max = Number.NEGATIVE_INFINITY;
+    var min = Number.POSITIVE_INFINITY;
+    var sequencia = [1,2,3,4,5,6,7,8,9,10];
+    for (i = 0; i != sequencia.length; i++){
+        max = max > sequencia[i]? max : sequencia[i];
+        min = min < sequencia[i]? min : sequencia[i];
+        media += i;
+            if (i == sequencia.length){return(max,min,media)}
+    }
+    console.log(max);
+    console.log(min);
+    console.log(media/2);
+}
+
+Ex 11 End */
+
 //Inline Geral
 
-main();
+//main();
+
+
+//Termina a ficha.
