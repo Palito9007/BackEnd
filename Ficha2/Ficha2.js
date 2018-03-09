@@ -27,18 +27,18 @@ function main() {
 
  /*//Ex2 Begin
 function main() {
+    var processada = '';
     var original = 'Hoje e Domingo';
-    var decremento = original.length;
-    var ultimaLetra = decremento;
-    var primeiraLetra = 0;
-    for(incremento = 0; incremento != decremento; (incremento++, decremento--)){
-        ultimaLetra = original.charAt(decremento);
-        primeiraLetra = original.charAt(incremento);
-        original.replace(ultimaLetra, primeiraLetra);
-        console.log(original.replace(ultimaLetra, primeiraLetra));
+    var substituicao = original.length;
+    while(substituicao != 0, substituicao--){
+        palavraAdicao = original[substituicao];
+        processada = processada + palavraAdicao;
+        
     }
-
+    console.log(processada);
+    return processada;
 }
+
 
 
 
@@ -64,15 +64,19 @@ function main() {
 
 //Ex 3 End */
 
-//Ex 4 Begin /*
+/* //Ex 4 Begin 
 
 function main(){
-    var letra = 'h';
+    var letra = 'i';
     var frase = 'Hoi';
+    var quantPalavras = 0;
+    var posicaoFrase = frase.length;
     frase = frase.toLowerCase(frase);
-    for (posicaoFrase = frase.length; posicaoFrase != 0; posicaoFrase--){
-        if (letra == frase[posicaoFrase]) { console.log(letra); }
+    while (posicaoFrase != 0, posicaoFrase--){
+        quantPalavras = frase[posicaoFrase] == letra ? quantPalavras = quantPalavras + 1  : quantPalavras = quantPalavras;
+        
     }
+    console.log(quantPalavras);
 }
 
 //Ex 4 End */
