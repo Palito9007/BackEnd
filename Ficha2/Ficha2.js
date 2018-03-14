@@ -90,7 +90,7 @@ function main() {
 }
 
 //Ex 5 End */
- /*//Ex 6 Begin
+ //Ex 6 Begin
 
 function main() {
     console.log('Desenha rectangulos');
@@ -99,13 +99,14 @@ function main() {
     for(altura = 10; altura != 0; altura--){
 
         for(x = largura; x != 0; x--) {
-            console.log('*'*largura)
+            console.log(('*')*largura)
         }
     }
 }
 
 
-//Ex 6 End */
+//Ex 6 End
+
 
 
 //Inline Geral
