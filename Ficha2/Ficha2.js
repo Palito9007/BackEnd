@@ -64,7 +64,7 @@ function main() {
 
 //Ex 3 End */
 
-/* //Ex 4 Begin 
+ //Ex 4 Begin 
 
 function main(){
     var letra = 'i';
@@ -79,17 +79,18 @@ function main(){
     console.log(quantPalavras);
 }
 
-//Ex 4 End */
-/*//Ex 5 Begin 
+//Ex 4 End 
+//Ex 5 Begin 
 
 function main() {
     var horaEntrada = 8;
+    var horaSaida = 18;
     var horaSaida = 18;
     console.log(horaSaida-horaEntrada);
     return(horaSaida-horaEntrada);
 }
 
-//Ex 5 End */
+//Ex 5 End 
  //Ex 6 Begin
 
 function main() {

@@ -41,14 +41,21 @@ var arrayutils = {
     },
     //4.f Sub Array
     subArray: function(array,start,end){
-        var subArray = [];
+        var subArray = "";
         while (array[start] != array[end]) {
-            subArray += array[start];
+            subArray += array[start] + ',';
             start++; 
         }
         return subArray;
 
-    }
+    },
+    //4.g Mesmo tamanho
+    sameLength: function (array, outroArray) {
+        a = array.length;
+        a1 = outroArray.length;
+        a == a1 ? resposta = true : resposta = false;
+        return resposta;
+    },
 }
 
 

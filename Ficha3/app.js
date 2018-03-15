@@ -44,17 +44,21 @@ function performDownload(started, update, completed) {
 
 //Variaveis necessárias
 var arrayUtils = require("./ArrayUtils");
-var a = [1,2,3,4,5,6,7,8,9,10];
-var valor = 1; 
-
+var a = [1,2,3,6,5,6,7,8,9,10];
+var a1 = [1,2,3,6,5,6,7,92,25];
+var valor = 3; 
+var indexStart = 2;
+var indexEnd = 4;
 //Variaveis de funções
 var vazio = arrayUtils.isEmpty(a); //       OK!
 var max = arrayUtils.numberMax(a); //       100%!
 var min = arrayUtils.numberMin(a); //       FUNCIONA!
 var media = arrayUtils.numberAverage(a);//  GOOD!
 var indexOf = arrayUtils.indexOf(a,valor);//TOP!
-var subArray = arrayUtils.subArray(a,indexStart,indexEnd);      
+var subArray = arrayUtils.subArray(a,indexStart,indexEnd); //FUNCIONA TAMBEM
+var sameLength = arrayUtils.sameLength(a,a1);
+// !!!!!!!!    
 
-console.log(subArray);
+console.log(sameLength);
 
 //Ex 4 End
