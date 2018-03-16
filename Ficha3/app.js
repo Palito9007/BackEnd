@@ -56,7 +56,7 @@ var min = arrayUtils.numberMin(a); //       FUNCIONA!
 var media = arrayUtils.numberAverage(a);//  GOOD!
 var indexOf = arrayUtils.indexOf(a,valor);//TOP!
 var subArray = arrayUtils.subArray(a,indexStart,indexEnd); //FUNCIONA TAMBEM
-var sameLength = arrayUtils.sameLength(a,a1);
+var sameLength = arrayUtils.sameLength(a,a1); // ESTA A DAR
 // !!!!!!!!    
 
 console.log(sameLength);
