@@ -10,8 +10,8 @@ Emitter.prototype.on = function(type, listener){
 }
 
 Emitter.prototype.emit = function(type){
-    this.type.forEach(function(percorreType){
-        return(percorreType)
+    this.type.forEach(function(type){
+        return(listener)
     });
 }
 module.exports = Emitter;

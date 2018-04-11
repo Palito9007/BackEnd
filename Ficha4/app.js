@@ -26,4 +26,5 @@ emtr.on("greet1", function(){
 emtr.on(eventConstants.GREET, function(){
     console.log('Bem vindo outravez.');
 });
-emtr.emit("greet1");
+emtr.emit(eventConstants.GREET);
+console.log(eventConstants.events.GREET);
