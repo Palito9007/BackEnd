@@ -1,3 +1,4 @@
+
 const ENCODING = require('crypto')
 const bodyParser = require('body-parser');
 
@@ -14,6 +15,10 @@ function readFile(fileName){
 app.get('/listPerson', function(request, response) { 
     response.send(readFile('./persons.json'));
 }),
+app.get('/:id', function(request, response){ 
+    response.send(readFile('./persons.json'));
+}),
+
 app.post('/addPerson', function(request, response){
     var file = readFile('./persons.json');
     var jsonData = JSON.parse(file);
@@ -25,6 +30,12 @@ app.post('/addPerson', function(request, response){
     response.send(jsonData);
     
     
-} )
+} ),
+
+app.delete('/deletePerson', function(request,response){
+        var f = readFile('./persons.json');
+        var deletePerson = ("Id");
+        response.send(f);
+});
 
 app.listen(3000, () => console.log(' O servidor está online. '))
