@@ -1,0 +1,14 @@
+{
+
+ "Video":{
+    "Id" : "uuid",
+    "Uploader" : "String",
+    "Title" : "String",
+    "Description" : "String",
+    "Length" : "Number",
+    "URL" : "String",
+    "Views" : "Number",
+    "Comments" : "Array",
+    "Tags" : "Array"
+    }
+}
