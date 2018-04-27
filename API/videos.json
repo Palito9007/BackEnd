@@ -1,14 +1,46 @@
 {
-
- "Video":{
-    "Id" : "uuid",
-    "Uploader" : "String",
-    "Title" : "String",
-    "Description" : "String",
-    "Length" : "Number",
-    "URL" : "String",
-    "Views" : "Number",
-    "Comments" : "Array",
-    "Tags" : "Array"
-    }
+  "Video1": {
+    "Id": "1",
+    "Uploader": "",
+    "Title": "",
+    "Description": "",
+    "Length": "",
+    "URL": "",
+    "Views": "",
+    "Comments": "",
+    "Tags": ""
+  },
+  "Video2": {
+    "Id": "",
+    "Uploader": "",
+    "Title": "",
+    "Description": "",
+    "Length": "",
+    "URL": "",
+    "Views": "",
+    "Comments": "",
+    "Tags": ""
+  },
+  "Video3": {
+    "Id": "",
+    "Uploader": "",
+    "Title": "",
+    "Description": "",
+    "Length": "",
+    "URL": "",
+    "Views": "",
+    "Comments": "",
+    "Tags": ""
+  },
+  "Video4": {
+    "Id": "",
+    "Uploader": "",
+    "Title": "",
+    "Description": "",
+    "Length": "",
+    "URL": "",
+    "Views": "",
+    "Comments": "",
+    "Tags": ""
+  }
 }
