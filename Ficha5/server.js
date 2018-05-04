@@ -28,8 +28,6 @@ app.post('/addPerson', function(request, response){
     p.id = id;
     jsonData["person"+id] = JSON.stringify(p);
     response.send(jsonData);
-    
-    
 } ),
 
 app.delete('/deletePerson', function(request,response){
