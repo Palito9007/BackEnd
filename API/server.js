@@ -21,7 +21,7 @@ app.get ('/videos', function(req, res){
 });
 
 
-app.get ('/videos/:id', function(req, res){
+app.get ('/videos_id/:id', function(req, res){
     var file = readFile('./videos.json'); 
    var jsonData = JSON.parse(file);
    var id = req.params.id;
@@ -31,32 +31,49 @@ app.get ('/videos/:id', function(req, res){
        res.end();
    }
    else{
-       return(video);
+      res.send(video);
    }return
 });
-app.get ('/videos/:Uploader', function(req, res){
-    var file = readFile('./videos.json');    
-    return res.send(file);
+app.get ('/videos_up/:uploader', function(req, res){
+    var file = readFile('./videos.json'); 
+    var jsonData = JSON.parse(file);
+    var uploader = req.params.uploader;
+    var video = jsonData["video " + uploader]
+    if (Error){
+        res.writeHead(404);
+        res.end();
+    }
+    else{
+       res.send(video);
+    }
 });
 
-app.post('./videos', function(req, res){
+app.post('/videos', function(req, res){
     var addComentario = JSON.stringify('./videos.json');
+    var comentario = req.body;
+    comentario = JSON.parse(comentario);
     addComentario = addComentario+comentario;
     addComentario = JSON.parse('./videos.json');
-    return res.send(addComentario);
+    if (Error){
+        res.writeHead(404);
+        res.end();
+    }
+    else{
+        return(addComentario);
+    }res.send(addComentario);
 });
 
 app.post('/add', function(req, res){
-    var file = readFile('./videos.json');
+    var file = readFile('./API/videos.json');
     var jsonData = JSON.parse(file);
     var uniqueID = uuidv1(); 
     var addVideo = req.body;
     addVideo.Id = uniqueID;
     jsonData["Video"+uniqueID] = JSON.stringify(addVideo);
     res.send(jsonData);
-} ),
+});
 
-app.delete('/del', function(req,res){
+app.delete('/del/:id', function(req,res){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file);
     var id = req.params.id;
@@ -67,10 +84,10 @@ app.delete('/del', function(req,res){
     res.send(jsonData);
 });
 
-app.get('/visvideos', function (request, response) {
+app.get('/visvideos', function (req, res) {
     var vis = readFile('./videos.json');
     var jsonData = JSON.parse(vis);
-    var recebe = request.params.Views;
+    var recebe = req.params.Views;
     var array = [];
 
     for (var asd in jsonData) {
@@ -83,7 +100,7 @@ app.get('/visvideos', function (request, response) {
     array.sort(function(a, b) {
         return a.Views - b.Views;
       });
-    response.send(array);
+    res.send(array);
 });
 
 

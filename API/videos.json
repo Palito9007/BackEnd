@@ -7,8 +7,8 @@
     "Description": "Hello",
     "Length": "1:20",
     "URL": "/youtube.com",
-    "Views": "71",
-    "Comments": "47",
+    "Views": 71,
+    "Comments": 47,
     "Tags": "Joomla"
   },
   "Video2": {
@@ -18,7 +18,7 @@
     "Description": "Remix good",
     "Length": "99:10",
     "URL": "/TrapRemix",
-    "Views": "40",
+    "Views": 40,
     "Comments": "1",
     "Tags": "Music"
   },
@@ -29,7 +29,7 @@
     "Description": "Crua",
     "Length": "2:00",
     "URL": "/pimbi",
-    "Views": "9000",
+    "Views": 9000,
     "Comments": "9999",
     "Tags": "Pimpinela crua"
   },
@@ -40,7 +40,7 @@
     "Description": "Atravessando a ilha pelo meio ;)",
     "Length": "8:00",
     "URL": "/sempreacorrer",
-    "Views": "999999999",
+    "Views": 999999999,
     "Comments": "88",
     "Tags": "Madeira is fixe"
   }
